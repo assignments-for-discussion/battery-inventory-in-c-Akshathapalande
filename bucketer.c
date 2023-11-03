@@ -9,7 +9,7 @@ struct CountsBySoH {
 
 struct CountsBySoH countBatteriesByHealth(const int* presentCapacities, int nBatteries) {
   struct CountsBySoH counts = {0, 0, 0};
-  int rated_capacity = 120; // Assuming all batteries have a rated capacity of 120 Ah
+  int rated_capacity = 120;  // Assuming all batteries have a rated capacity of 120 Ah
 
   for (int i = 0; i < nBatteries; i++) {
     int present_capacity = presentCapacities[i];
